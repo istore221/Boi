@@ -26,8 +26,8 @@ internals.validate = function(data,schema,cb){
 
         if(vobj._type == "object"){
 
-          let validator  = vobj.jsonVal(value).validate();
-          //console.log(validator);
+          let validator  = vobj.jsonVal(value).build().validate();
+          
 
           if(!validator._isValid) res.errors.push(...validator._errors);
 
