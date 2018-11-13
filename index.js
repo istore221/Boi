@@ -12,17 +12,9 @@ const schema2 = Boi.object().keys({
   username: Boi.string().max(3)
 });
 
-const data1 = { username: '' ,password: 'fkz'};
+const data1 = { username: 'sasasssssss' ,password: 'sasdsjk'};
 const data2 = { username: 'javx' };
 
 const result1 = Boi.validate(data1,schema1);
-//const result2 = Boi.validate(data2,schema2);
 
-
-// Boi.validate(data, schema1, (err, value) => {
-//
-//
-// });
-
-// console.log(schema1);
-// console.log(schema2);
+console.log(result1);

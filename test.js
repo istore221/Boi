@@ -9,7 +9,7 @@ const schema = Joi.object().keys({
 });
 
 
-const result = Joi.validate({ username: 'ab', password: "aaa" }, schema);
+const result = Joi.validate({ username: 'absss', password: "as" }, schema);
 
 
-console.log(result.error.details);
+console.log(result);
