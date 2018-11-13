@@ -1,6 +1,6 @@
 const BoiError = require('../../error');
 const _ = require('underscore');
-
+const options = require('../../option');
 
 
 module.exports = class Any{
@@ -14,7 +14,7 @@ module.exports = class Any{
     this._field = null;
     this._isValid = false;
     this._errors = [];
-    this.options = null;
+    this.options = options._value;
   }
 
   createError(vtype){
@@ -28,6 +28,16 @@ module.exports = class Any{
 
   opts(opts){
     this.options = opts;
+    return this;
+  }
+
+  field(arg){
+    this._field = arg;
+    return this;
+  }
+
+  val(arg){
+    this._value = arg;
     return this;
   }
 

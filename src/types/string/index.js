@@ -14,15 +14,9 @@ module.exports = function(){
         this._type = 'string';
       }
 
-      field(arg){
-        this._field = arg;
-        return this;
-      }
 
-      val(arg){
-        this._value = arg;
-        return this;
-      }
+
+    
 
       min(arg){
         this._min = arg;
